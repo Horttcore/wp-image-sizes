@@ -1,4 +1,4 @@
-# WP Image Sizes
+# WP Image Sizes ![StyleCI](https://github.styleci.io/repos/189654123/shield?branch=master)
 
 A helper class to register image sizes
 
