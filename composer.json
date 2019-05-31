@@ -1,0 +1,16 @@
+{
+    "name": "ralfhortt/wp-image-sizes",
+    "description": "A helper class to register image sizes",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Ralf Hortt",
+            "email": "me@horttcore.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RalfHortt\\ImageSizes\\": "src"
+        }
+    }
+}
