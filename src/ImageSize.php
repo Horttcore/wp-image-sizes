@@ -1,6 +1,6 @@
 <?php
 /**
- * Image size component
+ * Image size component.
  *
  * This file handles custom image sizes
  *
@@ -9,36 +9,31 @@
 
 namespace RalfHortt\ImageSizes;
 
-
-/**
- *
- */
 class ImageSize
 {
-
     /**
-     * Image size name
+     * Image size name.
      *
      * @var string
      */
     protected $name;
 
     /**
-     * Image size label
+     * Image size label.
      *
      * @var string
      */
     protected $label;
 
     /**
-     * Image size width
+     * Image size width.
      *
      * @var int
      */
     protected $width;
 
     /**
-     * Image size height
+     * Image size height.
      *
      * @var int
      */
@@ -52,7 +47,7 @@ class ImageSize
     protected $crop;
 
     /**
-     * Class constructor
+     * Class constructor.
      *
      * @param string $name   Size identifier
      * @param string $label  Size name
@@ -69,9 +64,8 @@ class ImageSize
         $this->crop = $crop;
     }
 
-
     /**
-     * Register
+     * Register.
      *
      * @return void
      */
@@ -82,17 +76,16 @@ class ImageSize
     }
 
     /**
-     * Add custom image to image chooser
+     * Add custom image to image chooser.
      *
      * @param array $imageSizes Image sizes registered to chooser element
      *
      * @return array Image size
      */
-    public function imageSelect( array $imageSizes ): array
+    public function imageSelect(array $imageSizes): array
     {
         $imageSizes[$this->name] = "{$this->label} ({$this->width}×{$this->height} px)";
 
         return $imageSizes;
     }
-
 }
