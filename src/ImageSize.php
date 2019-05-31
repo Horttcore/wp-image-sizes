@@ -71,7 +71,7 @@ class ImageSize
 
 
     /**
-     * Register 
+     * Register
      *
      * @return void
      */
@@ -85,14 +85,14 @@ class ImageSize
      * Add custom image to image chooser
      *
      * @param array $imageSizes Image sizes registered to chooser element
-     * 
+     *
      * @return array Image size
      */
-    public function imageSelect( $imageSizes ): array
+    public function imageSelect( array $imageSizes ): array
     {
-        $imagesizes[$this->name] = "{$this->label} ($this->width}×{$this->height})";
+        $imageSizes[$this->name] = "{$this->label} ({$this->width}×{$this->height} px)";
 
-        return $imagesizes;
+        return $imageSizes;
     }
 
 }
